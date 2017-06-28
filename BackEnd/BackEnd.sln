@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26621.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{1B4FE759-F507-49AA-859C-031F4D2373F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{1B4FE759-F507-49AA-859C-031F4D2373F2}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BB65FCA3-1CCA-4391-93D1-1792BA30082D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B4FE759-F507-49AA-859C-031F4D2373F2} = {1B4FE759-F507-49AA-859C-031F4D2373F2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backer", "Backer\Backer.csproj", "{B018C4AC-36C8-437B-A2D7-23F45FD97C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{2109FDB5-EB8F-41AF-8E9E-3925EF9B9FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compact", "Compact\Compact.csproj", "{641EF818-8D30-401E-8BFA-4C2864ECD46E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,18 @@ Global
 		{BB65FCA3-1CCA-4391-93D1-1792BA30082D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB65FCA3-1CCA-4391-93D1-1792BA30082D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB65FCA3-1CCA-4391-93D1-1792BA30082D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B018C4AC-36C8-437B-A2D7-23F45FD97C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B018C4AC-36C8-437B-A2D7-23F45FD97C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B018C4AC-36C8-437B-A2D7-23F45FD97C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B018C4AC-36C8-437B-A2D7-23F45FD97C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2109FDB5-EB8F-41AF-8E9E-3925EF9B9FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2109FDB5-EB8F-41AF-8E9E-3925EF9B9FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2109FDB5-EB8F-41AF-8E9E-3925EF9B9FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2109FDB5-EB8F-41AF-8E9E-3925EF9B9FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641EF818-8D30-401E-8BFA-4C2864ECD46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641EF818-8D30-401E-8BFA-4C2864ECD46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641EF818-8D30-401E-8BFA-4C2864ECD46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641EF818-8D30-401E-8BFA-4C2864ECD46E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
