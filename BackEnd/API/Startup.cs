@@ -24,7 +24,11 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                options.InputFormatters.Insert(0, new Formatters.InputFormatter());
+                options.OutputFormatters.Insert(0, new Formatters.OutputFormatter());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
