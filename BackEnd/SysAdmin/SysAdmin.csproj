@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D2323AA6-8F37-49C5-968B-A418C4525291}</ProjectGuid>
+    <ProjectGuid>{9208B9E9-E796-4836-879A-175CD9468D5D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SysAdmin</RootNamespace>
     <AssemblyName>SysAdmin</AssemblyName>
@@ -75,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreCI\CoreCI.csproj">
+      <Project>{580878cd-d13d-47c9-bff9-099e2d103630}</Project>
+      <Name>CoreCI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
