@@ -3,20 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26621.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreCI", "CoreCI\CoreCI.csproj", "{580878CD-D13D-47C9-BFF9-099E2D103630}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5D1087AF-2A9B-4A0E-9213-8E8590E91066}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B} = {DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreCI", "CoreCI\CoreCI.csproj", "{580878CD-D13D-47C9-BFF9-099E2D103630}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFX", "CoreFX\CoreFX.csproj", "{9DAC2770-EF2D-4C18-B047-1AFA88FE1135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreFX", "CoreFX\CoreFX.csproj", "{9DAC2770-EF2D-4C18-B047-1AFA88FE1135}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysAdmin", "SysAdmin\SysAdmin.csproj", "{9208B9E9-E796-4836-879A-175CD9468D5D}"
 	ProjectSection(ProjectDependencies) = postProject
-		{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B} = {DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}
+		{4F99015E-8A25-4A31-9FAB-5A3779BD17B7} = {4F99015E-8A25-4A31-9FAB-5A3779BD17B7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{4F99015E-8A25-4A31-9FAB-5A3779BD17B7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A790200D-A67A-42EA-9312-88338B4698E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F99015E-8A25-4A31-9FAB-5A3779BD17B7} = {4F99015E-8A25-4A31-9FAB-5A3779BD17B7}
 	EndProjectSection
 EndProject
 Global
@@ -25,14 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEA10DC5-7DDD-4948-B6D9-BFA09316D51B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D1087AF-2A9B-4A0E-9213-8E8590E91066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D1087AF-2A9B-4A0E-9213-8E8590E91066}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D1087AF-2A9B-4A0E-9213-8E8590E91066}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D1087AF-2A9B-4A0E-9213-8E8590E91066}.Release|Any CPU.Build.0 = Release|Any CPU
 		{580878CD-D13D-47C9-BFF9-099E2D103630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{580878CD-D13D-47C9-BFF9-099E2D103630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{580878CD-D13D-47C9-BFF9-099E2D103630}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +37,14 @@ Global
 		{9208B9E9-E796-4836-879A-175CD9468D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9208B9E9-E796-4836-879A-175CD9468D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9208B9E9-E796-4836-879A-175CD9468D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F99015E-8A25-4A31-9FAB-5A3779BD17B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F99015E-8A25-4A31-9FAB-5A3779BD17B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F99015E-8A25-4A31-9FAB-5A3779BD17B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F99015E-8A25-4A31-9FAB-5A3779BD17B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A790200D-A67A-42EA-9312-88338B4698E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A790200D-A67A-42EA-9312-88338B4698E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A790200D-A67A-42EA-9312-88338B4698E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A790200D-A67A-42EA-9312-88338B4698E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
