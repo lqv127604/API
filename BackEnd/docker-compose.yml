@@ -6,31 +6,3 @@ services:
     build:
       context: ./API
       dockerfile: Dockerfile
-    depends_on:
-      - "mongodb"
-    # expose:
-    #  - "80"
-    ports:
-     -  "4142:80"
-
-  mongodb:
-    container_name: mongodb
-    image: mongo:latest
-    expose:
-      - "27017"
-    # ports:
-    #   - "27017:27017"
-    logging:
-      driver: json-file
-
-  mongo-express:
-    container_name: mongo-express
-    image: mongo-express
-    ports:
-      - "8081:8081"
-    logging:
-      driver: json-file
-    depends_on:
-      - "mongodb"
-    environment:
-      - ME_CONFIG_MONGODB_SERVER=mongodb

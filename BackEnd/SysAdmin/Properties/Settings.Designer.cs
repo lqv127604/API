@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Backer.Properties
+namespace SysAdmin.Properties
 {
 
 

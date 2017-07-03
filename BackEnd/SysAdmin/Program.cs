@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Backer
+namespace SysAdmin
 {
     internal static class Program
     {
