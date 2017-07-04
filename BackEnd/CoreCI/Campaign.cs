@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace CoreCI
 {
@@ -22,6 +20,8 @@ namespace CoreCI
 
         public string Description { get; set; }
 
+        public bool HiddenItems { get; set; }
+
         public long CreatedBy { get; set; }
 
         public int CreatedAt { get; set; }
@@ -29,5 +29,10 @@ namespace CoreCI
         public long ModifiedBy { get; set; }
 
         public int ModifiedAt { get; set; }
+
+        /// <summary>
+        /// Khóa ngoại với Item
+        /// </summary>
+        public HashSet<long> CampaignItems { get; set; }
     }
 }

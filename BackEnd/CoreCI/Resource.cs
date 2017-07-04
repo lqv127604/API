@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CoreCI
+﻿namespace CoreCI
 {
     internal class Resource
     {
         public long _id { get; set; }
 
+        /// <summary>
+        /// Khóa ngoại với User
+        /// </summary>
         public long UserId { get; set; }
 
         public string StoredAt { get; set; }

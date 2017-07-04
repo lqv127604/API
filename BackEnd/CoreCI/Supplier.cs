@@ -1,17 +1,16 @@
 ﻿namespace CoreCI
 {
-    public class Category
+    public class Supplier
     {
         public string _id { get; set; }
 
-        /// <summary>
-        /// Khóa ngoại Categeries
-        /// </summary>
-        public string Parent { get; set; }
-
         public string Name { get; set; }
 
-        public string Path { get; set; }
+        public string Address { get; set; }
+
+        public int SizeRate { get; set; }
+
+        public string Description { get; set; }
 
         public long CreatedBy { get; set; }
 

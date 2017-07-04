@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace CoreCI
 {
@@ -8,6 +6,9 @@ namespace CoreCI
     {
         public long _id { get; set; }
 
+        /// <summary>
+        /// Khóa khoại với User
+        /// </summary>
         public int UserID { get; set; }
 
         public string DeliveryMethod { get; set; }
@@ -31,5 +32,15 @@ namespace CoreCI
         public long ModifiedBy { get; set; }
 
         public int ModifiedAt { get; set; }
+
+        /// <summary>
+        /// Khóa ngoại với OrderedItem
+        /// </summary>
+        public Dictionary<long, OrderedItem> Ordered { get; set; }
+
+        /// <summary>
+        /// Khóa ngoại với Item
+        /// </summary>
+        public Dictionary<long, Item> Items { get; set; }
     }
 }
